@@ -1,0 +1,71 @@
+/* ============================================================
+   AHK Malaysia — Colour tokens
+   Source of truth: PPTX theme "AHK NEU" + brand brief.
+   Primary navy and light-blue secondary carry the identity;
+   the six accents are used sparingly, one per view.
+   ============================================================ */
+
+:root {
+  /* ---- Brand core ---- */
+  --ahk-navy:        #003366; /* Primary — the AHK block, headlines, key UI */
+  --ahk-navy-700:    #002A54; /* pressed / deeper navy */
+  --ahk-navy-800:    #001F3D; /* darkest tint for large fills */
+  --ahk-lightblue:   #CCD7E6; /* Secondary — panels, tabs, tints */
+  --ahk-lightblue-300:#E3EAF3;/* softest blue tint */
+
+  /* ---- Accent palette (use ONE per view) ---- */
+  --ahk-blue:   #00A6E3; /* innovation / digital */
+  --ahk-green:  #28AD84; /* sustainability / growth */
+  --ahk-orange: #DE8703; /* trade / energy */
+  --ahk-red:    #C34343; /* alert / emphasis */
+  --ahk-yellow: #FFDE5B; /* highlight / optimism */
+
+  /* accent support tints (10% wash for backgrounds) */
+  --ahk-blue-100:   #E1F4FC;
+  --ahk-green-100:  #E5F5EF;
+  --ahk-orange-100: #FBF0DC;
+  --ahk-red-100:    #F7E4E4;
+  --ahk-yellow-100: #FFF8DE;
+
+  /* ---- Neutrals ---- */
+  --ahk-black:  #000000;
+  --ahk-ink:    #1A2A3A; /* near-black body text, warmer than pure black */
+  --ahk-gray-700: #4A5A6A;
+  --ahk-gray-500: #7A8794;
+  --ahk-gray-400: #A7B1BC;
+  --ahk-gray-300: #D4D9DF;
+  --ahk-gray-200: #E7EAEE;
+  --ahk-gray-100: #F2F3F4; /* theme accent6 — page wash */
+  --ahk-white:  #FFFFFF;
+
+  /* ============================================================
+     Semantic aliases — reference these in components
+     ============================================================ */
+  --color-text:            var(--ahk-ink);
+  --color-text-muted:      var(--ahk-gray-500);
+  --color-text-inverse:    var(--ahk-white);
+  --color-text-brand:      var(--ahk-navy);
+
+  --color-bg:              var(--ahk-white);
+  --color-bg-subtle:       var(--ahk-gray-100);
+  --color-bg-brand:        var(--ahk-navy);
+  --color-bg-brand-soft:   var(--ahk-lightblue);
+  --color-bg-brand-wash:   var(--ahk-lightblue-300);
+
+  --color-surface-card:    var(--ahk-white);
+  --color-border:          var(--ahk-gray-300);
+  --color-border-strong:   var(--ahk-navy);
+  --color-divider:         var(--ahk-gray-200);
+
+  --color-accent:          var(--ahk-blue);
+  --color-link:            var(--ahk-navy);
+  --color-link-hover:      var(--ahk-blue);
+
+  --color-focus-ring:      var(--ahk-blue);
+
+  /* status */
+  --color-success:  var(--ahk-green);
+  --color-warning:  var(--ahk-orange);
+  --color-danger:   var(--ahk-red);
+  --color-info:     var(--ahk-blue);
+}

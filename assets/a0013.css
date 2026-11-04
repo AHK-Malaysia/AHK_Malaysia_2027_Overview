@@ -1,0 +1,39 @@
+/* ============================================================
+   AHK Malaysia — Radii, borders, shadows, motion
+   Swiss / German-minimal: near-square corners, hairline borders,
+   restrained shadows. NO playful rounding, NO heavy drop shadows.
+   ============================================================ */
+
+:root {
+  /* ---- Radii (deliberately small) ---- */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;   /* default control radius */
+  --radius-md:   6px;   /* cards */
+  --radius-pill: 999px; /* tags / chips only */
+
+  /* ---- Borders ---- */
+  --border-hairline: 1px solid var(--color-border);
+  --border-strong:   1.5px solid var(--color-border-strong);
+  --border-accent:   2px solid var(--ahk-navy);
+
+  /* signature: the AHK "block" left-rule, used on quotes & callouts */
+  --rule-brand: 4px solid var(--ahk-navy);
+
+  /* ---- Shadows (subtle, cool-tinted) ---- */
+  --shadow-none: none;
+  --shadow-xs: 0 1px 2px rgba(0, 51, 102, 0.06);
+  --shadow-sm: 0 2px 6px rgba(0, 51, 102, 0.08);
+  --shadow-md: 0 6px 20px rgba(0, 51, 102, 0.10);
+  --shadow-lg: 0 16px 40px rgba(0, 51, 102, 0.12);
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0.0, 0.2, 1); /* @kind other */
+  --ease-out:      cubic-bezier(0.0, 0.0, 0.2, 1); /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-normal: 200ms; /* @kind other */
+  --dur-slow:   360ms; /* @kind other */
+
+  /* ---- Focus ---- */
+  --focus-ring: 0 0 0 3px rgba(0, 166, 227, 0.4);
+}

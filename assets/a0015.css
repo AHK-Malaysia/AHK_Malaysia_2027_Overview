@@ -1,0 +1,11 @@
+/* ============================================================
+   AHK Malaysia Design System — global entry point
+   Consumers link THIS file. It is an import manifest only.
+   ============================================================ */
+
+@import url('a0009.css');
+@import url('a0010.css');
+@import url('a0011.css');
+@import url('a0012.css');
+@import url('a0013.css');
+@import url('a0014.css');
